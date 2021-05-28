@@ -3,4 +3,4 @@
 rm *.qst
 rm *.gpg
 gpg --cipher-algo AES256 --symmetric questions1.json 
-openssl base64 -in questions1.json.gpg -out questions1.qst
+base64 -i questions1.json.gpg -o questions1.qst
