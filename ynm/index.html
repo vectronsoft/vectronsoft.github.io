@@ -2,14 +2,45 @@
         <head>
             <link rel="stylesheet" href="style.css">
             <link rel="stylesheet" href="font-awesome.min.css">
-            <style>
-            </style>
+        <script>
+                function ageCalculator() {
+                    var userinput = document.getElementById("DOB").value;
+                    var dob = new Date(userinput);
+                    if(userinput!=null && userinput!='') {
+                            var month_diff = Date.now() - dob.getTime();
+                            var age_dt = new Date(month_diff); 
+                            var year = age_dt.getUTCFullYear();
+                            var age = Math.abs(year - 1970);
+                            if (age >= 18) {
+                                  var x = document.getElementById("download");
+                                  x.style.display = "block";
+                            }
+                    }
+                }
+                </script>
         </head>
         <body>
-                Download the full set of questions from here.
-                <button class="btn"><i class="fa fa-download"></i> 
-                    <a href="ynm://vectronsoft.github.io/ynm/questions1.qst">Download</a>
-                </button>
-                This page is under construction.
+                <center>
+                        <h2 style="color: 32A80F" align="center">This is age restricted content. Please confirm you are older than 18 years.<br> <br> </h2> 
+
+                        <!-- Choose a date and enter in input field -->
+                        <b> Enter Date of Birth: <input type=date id = DOB> </b>
+                        <span id = "message" style="color:red"> </span> <br><br>  
+
+                        <!-- Choose a date and enter in input field -->
+                        <button type="submit" onclick = "ageCalculator()"> OK </button> <br><br>
+                        <h3 style="color:32A80F" id="result" align="center"></h3> 
+                </center>
+
+                <center>
+                        <div id="download" style="display:none">
+                                <button class="btn"><i class="fa fa-download"></i> 
+                                    <a href="ynm://vectronsoft.github.io/ynm/questions1.qst">Download</a>
+                                </button>
+                        </div>
+                </center>
+                <center>
+                    This page is under construction.
+                </center>
         </body>
 </html>
