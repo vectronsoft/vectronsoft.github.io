@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.vectronsoft.yesnomaybe",
+      "sha256_cert_fingerprints": [
+        "D1:EC:4B:0C:E8:E9:0C:5A:00:72:03:FE:BD:4D:85:E3:94:3D:17:D4:4E:EF:10:59:45:49:AF:33:99:21:4D:F0"
+      ]
+    }
+  }
+]
