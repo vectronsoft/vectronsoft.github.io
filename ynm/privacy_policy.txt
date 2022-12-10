@@ -1,0 +1,1 @@
+Yes/No/Maybe list app does not collect any data from your device.
