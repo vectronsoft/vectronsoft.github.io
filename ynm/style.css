@@ -16,3 +16,6 @@ color: inherit;
 a img {  
     border-style: none;
 }
+html, body {
+    height: 100%;
+}
